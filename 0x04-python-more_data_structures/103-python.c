@@ -6,7 +6,7 @@
 void print_python_bytes(PyObject *p)
 {
 	long int size;
-	int i;
+	int a;
 	char *trying_str = NULL;
 
 	printf("[.] bytes object info\n");
@@ -24,8 +24,8 @@ void print_python_bytes(PyObject *p)
 		printf("  first %li bytes:", size + 1);
 	else
 		printf("  first 10 bytes:");
-	for (i = 0; i <= size && i < 10; i++)
-		printf(" %02hhx", trying_str[i]);
+	for (a = 0; a <= size && a < 10; a++)
+		printf(" %02hhx", trying_str[a]);
 	printf("\n");
 }
 
