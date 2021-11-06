@@ -10,7 +10,7 @@ import csv
 
 class Base:
     """Class with:
-    Private class attribute: __nb_objects
+    Private class attribute: __nb_objects.
     """
 
     __nb_objects = 0
