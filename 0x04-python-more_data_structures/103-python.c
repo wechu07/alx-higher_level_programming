@@ -5,7 +5,7 @@
 
 void print_python_bytes(PyObject *p)
 {
-	long int size; 
+	long int size;
 	int i;
 	char *trying_str = NULL;
 
