@@ -8,7 +8,7 @@ class Square:
         - property def position(self)
         - property setter def position(self, value)
     Instantiation with optional size and optional position.
-    Public instance method: def area(self).
+    Public instance method: def area(self)..
     Public instance method: def my_print(self).
     """
 
