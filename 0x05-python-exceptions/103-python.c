@@ -52,7 +52,7 @@ void print_python_bytes(PyObject *p)
 void print_python_list(PyObject *p)
 {
     long unsigned int size;
-    unsigned int i;
+    unsigned int a;
     PyListObject *list = (PyListObject *)p;
     const char *type;
 
@@ -66,12 +66,12 @@ void print_python_list(PyObject *p)
     size = ((PyVarObject *)p)->ob_size;
     printf("[*] Size of the Python List = %lu\n", size);
     printf("[*] Allocated = %lu\n", list->allocated);
-    for (i = 0; i < size; i++)
+    for (a = 0; a < size; a++)
     {
-        type = (list->ob_item[i])->ob_type->tp_name;
-        printf("Element %i: %s\n", i, type);
+        type = (list->ob_item[a])->ob_type->tp_name;
+        printf("Element %i: %s\n", a, type);
         if (!strcmp(type, "bytes"))
-            print_python_bytes(list->ob_item[i]);
+            print_python_bytes(list->ob_item[a]);
         if (!strcmp(type, "float"))
             print_python_float(list->ob_item[i]);
     }
