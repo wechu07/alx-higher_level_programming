@@ -1,3 +1,10 @@
 #!/usr/bin/node
-const myVar = 'C is fun\nPython is cool\nJavascript is amazing';
-console.log(myVar);
+'use strict';
+let l = process.argv.length;
+if (l === 2) {
+  console.log('No argument');
+} else if (l === 3) {
+  console.log('Argument found');
+} else {
+  console.log('Arguments found');
+}
